@@ -1,0 +1,130 @@
+#ifndef CMAKE_DEF
+#define CMAKE_DEF 1
+
+
+#cmakedefine CMAKE_VERSION "@CMAKE_MAJOR_VERSION@"
+#ifndef CMAKE_VERSION
+#define CMAKE_VERSION ""
+#endif
+
+#cmakedefine CMAKE_MAJOR_VERSION (@CMAKE_MAJOR_VERSION@)
+#ifndef CMAKE_VERSION_MAJOR
+#define CMAKE_VERSION_MAJOR (0)
+#endif
+
+#cmakedefine CMAKE_VERSION_MINOR (@CMAKE_VERSION_MINOR@)
+#ifndef CMAKE_VERSION_MINOR
+#define CMAKE_VERSION_MINOR (0)
+#endif
+
+#cmakedefine CMAKE_VERSION_PATCH (@CMAKE_VERSION_PATCH@)
+#ifndef CMAKE_VERSION_PATCH
+#define CMAKE_VERSION_PATCH (0)
+#endif
+
+#cmakedefine CMAKE_VERSION_TWEAK (@PROJECT_VERSION_TWEAK@)
+#ifndef CMAKE_VERSION_TWEAK
+#define CMAKE_VERSION_TWEAK (0)
+#endif
+
+#cmakedefine CMAKE_C_COMPILER "@CMAKE_C_COMPILER@"
+#ifndef CMAKE_C_COMPILER
+#define CMAKE_C_COMPILER ""
+#endif
+
+#cmakedefine CMAKE_CXX_COMPILER "@CMAKE_CXX_COMPILER@"
+#ifndef CMAKE_C_COMPILER
+#define CMAKE_C_COMPILER ""
+#endif
+
+#cmakedefine ISPCFLAGS "@ISPCFLAGS@"
+#ifndef ISPCFLAGS
+#define ISPCFLAGS ""
+#endif
+
+#cmakedefine MINGW @MINGW@
+
+#cmakedefine MSVC @MSVC@
+#ifdef MSVC
+#cmakedefine MSVC10 @MSVC10@
+#cmakedefine MSVC11 @MSVC11@
+#cmakedefine MSVC12 @MSVC12@
+#cmakedefine MSVC14 @MSVC14@
+#cmakedefine MSVC60 @MSVC60@
+#cmakedefine MSVC70 @MSVC70@
+#cmakedefine MSVC71 @MSVC71@
+#cmakedefine MSVC80 @MSVC80@
+#cmakedefine MSVC90 @MSVC90@
+#endif
+
+#cmakedefine PROJECT_SOURCE_DIR "@PROJECT_SOURCE_DIR@"
+#ifndef PROJECT_SOURCE_DIR
+#define PROJECT_SOURCE_DIR ""
+#endif
+
+#cmakedefine PROJECT_BINARY_DIR "@PROJECT_BINARY_DIR@"
+#ifndef PROJECT_BINARY_DIR
+#define PROJECT_BINARY_DIR ""
+#endif
+
+#cmakedefine PROJECT_DESCRIPTION "@PROJECT_DESCRIPTION@"
+#ifndef PROJECT_DESCRIPTION
+#define PROJECT_DESCRIPTION ""
+#endif
+
+#cmakedefine PROJECT_HOMEPAGE_URL "@PROJECT_HOMEPAGE_URL@"
+#ifndef PROJECT_HOMEPAGE_URL
+#define PROJECT_HOMEPAGE_URL ""
+#endif
+
+#cmakedefine PROJECT_NAME "@PROJECT_NAME@"
+
+#cmakedefine PROJECT_ "@PROJECT_SOURCE_DIR@"
+#ifndef PROJECT_SOURCE_DIR
+#define PROJECT_SOURCE_DIR ""
+#endif
+
+#cmakedefine PROJECT_VERSION "@PROJECT_VERSION@"
+#ifndef PROJECT_VERSION
+#define PROJECT_VERSION ""
+#endif
+
+#cmakedefine PROJECT_VERSION_MAJOR (@PROJECT_VERSION_MAJOR@)
+#ifndef PROJECT_VERSION_MAJOR
+#define PROJECT_VERSION_MAJOR (0)
+#endif
+
+#cmakedefine PROJECT_VERSION_MINOR (@PROJECT_VERSION_MINOR@)
+#ifndef PROJECT_VERSION_MINOR
+#define PROJECT_VERSION_MINOR (0)
+#endif
+
+#cmakedefine PROJECT_VERSION_PATCH (@PROJECT_VERSION_PATCH@)
+#ifndef PROJECT_VERSION_PATCH
+#define PROJECT_VERSION_PATCH (0)
+#endif
+
+#cmakedefine PROJECT_VERSION_TWEAK (@PROJECT_VERSION_TWEAK@)
+#ifndef PROJECT_VERSION_TWEAK
+#define PROJECT_VERSION_TWEAK (0)
+#endif
+
+
+#cmakedefine UNIX @UNIX@
+
+#cmakedefine VERBOSE @VERBOSE@
+
+#cmakedefine WIN32 @WIN32@
+
+#cmakedefine WINCE @WINCE@
+
+#cmakedefine WINDOWS_PHONE @WINDOWS_PHONE@
+
+#cmakedefine WINDOWS_STORE @WINDOWS_STORE@
+
+#cmakedefine XCODE @XCODE@
+#ifdef XCODE
+#cmakedefine XCODE_VERSION "@XCODE_VERSION@"
+#endif
+
+#endif
