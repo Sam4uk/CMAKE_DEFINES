@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"files.autoSaveDelay": 3000,
+		"files.autoSaveDelay": 800,
 		"files.associations": {
 			"*.in": "cpp"
 		}
