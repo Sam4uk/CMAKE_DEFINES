@@ -663,28 +663,28 @@
 
 #cmakedefine CMAKE_SHARED_LIBRARY_PREFIX "@CMAKE_SHARED_LIBRARY_PREFIX@"
 #ifndef CMAKE_SHARED_LIBRARY_PREFIX
-    #if 0
-        #define CMAKE_SHARED_LIBRARY_PREFIX ""
-    #else
+    #if UNIX
         #define CMAKE_SHARED_LIBRARY_PREFIX "lib"
+    #else
+        #define CMAKE_SHARED_LIBRARY_PREFIX ""
     #endif
 #endif
 
 #cmakedefine CMAKE_SHARED_LIBRARY_SUFFIX "@CMAKE_SHARED_LIBRARY_SUFFIX@"
 #ifndef CMAKE_SHARED_LIBRARY_SUFFIX
-    #if 0
-        #define CMAKE_SHARED_LIBRARY_SUFFIX ".dll"
-    #else
+    #if UNIX
         #define CMAKE_SHARED_LIBRARY_PREFIX ".so"
+    #else
+        #define CMAKE_SHARED_LIBRARY_SUFFIX ".dll"
     #endif
 #endif
 
 #cmakedefine CMAKE_SHARED_MODULE_PREFIX "@CMAKE_SHARED_MODULE_PREFIX@"
 #ifndef CMAKE_SHARED_MODULE_PREFIX
-    #if 0
-        #define CMAKE_SHARED_MODULE_PREFIX ""
-    #else
+    #if UNIX
         #define CMAKE_SHARED_MODULE_PREFIX "lib"
+    #else
+        #define CMAKE_SHARED_MODULE_PREFIX ""
     #endif
 #endif
 
@@ -715,19 +715,19 @@
 
 #cmakedefine CMAKE_STATIC_LIBRARY_PREFIX "@CMAKE_STATIC_LIBRARY_PREFIX@"
 #ifndef CMAKE_STATIC_LIBRARY_PREFIX
-    #if 0
-        #define CMAKE_STATIC_LIBRARY_PREFIX ""
-    #else
+    #if UNIX
         #define CMAKE_STATIC_LIBRARY_PREFIX "lib"
+    #else
+        #define CMAKE_STATIC_LIBRARY_PREFIX ""
     #endif
 #endif
 
 #cmakedefine CMAKE_STATIC_LIBRARY_SUFFIX "@CMAKE_STATIC_LIBRARY_SUFFIX@"
 #ifndef CMAKE_STATIC_LIBRARY_SUFFIX
-    #if 0
-        #define CMAKE_STATIC_LIBRARY_SUFFIX ""
-    #else
+    #if UNIX
         #define CMAKE_STATIC_LIBRARY_SUFFIX ".a"
+    #else
+        #define CMAKE_STATIC_LIBRARY_SUFFIX ""
     #endif
 #endif
 
@@ -868,9 +868,9 @@
 #endif
 #define @PROJECT_NAME@_SOURCE_DIR PROJECT_SOURCE_DIR
 
-#cmakedefine PROJECT_VERSION (@PROJECT_VERSION@)
+#cmakedefine PROJECT_VERSION "@PROJECT_VERSION@"
 #ifndef PROJECT_VERSION
-    #define PROJECT_VERSION (0)
+    #define PROJECT_VERSION ""
 #endif
 #define @PROJECT_NAME@_VERSION PROJECT_VERSION
 
