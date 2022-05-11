@@ -22,9 +22,6 @@
 
 //===================================
 //Variables that Describe the System
-
-
-
 #cmakedefine ANDROID (@ANDROID@)
 #cmakedefine APPLE (@APPLE@)
 #cmakedefine BORLAND (@BORLAND@)
@@ -613,9 +610,9 @@
     #define CMAKE_PROJECT_NAME ""
 #endif
 
-#cmakedefine CMAKE_PROJECT_VERSION (@CMAKE_PROJECT_VERSION@)
+#cmakedefine CMAKE_PROJECT_VERSION "@CMAKE_PROJECT_VERSION@"
 #ifndef CMAKE_PROJECT_VERSION
-    #define CMAKE_PROJECT_VERSION (0)
+    #define CMAKE_PROJECT_VERSION "0"
 #endif
 
 #cmakedefine CMAKE_PROJECT_VERSION_MAJOR (@CMAKE_PROJECT_VERSION_MAJOR@)
