@@ -79,7 +79,9 @@
 #endif
 #cmakedefine MSYS (@MSYS@)
 #cmakedefine UNIX (@UNIX@)
+#if !defined(WIN32)
 #cmakedefine WIN32 (@WIN32@)
+#endif
 #cmakedefine WINCE (@WINCE@)
 #cmakedefine WINDOWS_PHONE (@WINDOWS_PHONE@)
 #cmakedefine WINDOWS_STORE (@WINDOWS_STORE@)
